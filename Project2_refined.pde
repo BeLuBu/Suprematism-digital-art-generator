@@ -2,11 +2,15 @@ void setup(){
   frameRate(0.5);
   size(500,500);
 }
+
+  int maxT = 10;
+  int maxL = 5;
+  
 void draw(){
     colorMode(HSB, 360, 100, 100);   //More easy to control the shade of yellow
     background(60, int(random(0,15)), int(random(90,100))); // Yellow, white and Grey
-    
-  int maxNumber = int(random(5,10)); //Set the max number of shape to 5-9
+   
+  int maxNumber = int(random(maxL,maxT)); //Set the max number of shape to 5-9 
 for (int howMany = 0; howMany < maxNumber; howMany++){ //The function will run 5-9 times
   int whatShape = int(random(1,5));   // THere will be 25% to generate each shape
   if (whatShape == 1) {
@@ -124,4 +128,22 @@ pushMatrix();
     }
   rect(0,0,random(50,width/8), random(10,height/8));
 popMatrix();
+}
+
+void keyPressed() {
+  if (key == 'p' || key == 'P') {            //Press p or P to print screen
+     saveFrame("PrintScreen/print_####.png");
+  }
+  if (key == '+') {                          //Press + to increas the numbers of shapes
+    maxL = maxT;
+    maxT = maxT + 1;
+    }
+  if (key == '-') {                          //Press - to decrease the numbers of shapes
+    maxT = maxL;
+    maxL = maxL - 1;
+  }
+  if (key == 'r' || key == 'R'){             //Reset the values to default
+    maxL = 5;
+    maxT = 10;
+  }
 }
