@@ -6,8 +6,8 @@ void draw(){
     colorMode(HSB, 360, 100, 100);   //More easy to control the shade of yellow
     background(60, int(random(0,15)), int(random(90,100))); // Yellow, white and Grey
     
-  int maxNumber = int(random(7,10)); //Set the max number of shape to 7-10
-for (int howMany = 0; howMany < maxNumber; howMany++){ //The function will run 7-10 times
+  int maxNumber = int(random(5,10)); //Set the max number of shape to 5-9
+for (int howMany = 0; howMany < maxNumber; howMany++){ //The function will run 5-9 times
   int whatShape = int(random(1,5));   // THere will be 25% to generate each shape
   if (whatShape == 1) {
     drawTri(1);                       //draw triangle
