@@ -138,7 +138,7 @@ popMatrix();
 }
 
 void keyPressed() {
-  if (key == 'p' || key == 'P') {            //Press p or P to start recording
+  if (key == 's' || key == 'S') {            //Press s or S to start recording
      saving = !saving;
   }
   if (key == '+') {                          //Press + to increas the numbers of shapes
