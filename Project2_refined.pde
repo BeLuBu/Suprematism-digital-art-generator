@@ -1,5 +1,5 @@
 void setup(){
-  frameRate(1);
+  frameRate(0.75);
   size(500,500);
 }
   boolean saving = false;
