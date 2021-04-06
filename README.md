@@ -1,5 +1,6 @@
 # Suprematism-digital-art-generator
 Project with Jason
+
 The artist we have chosen is Kazimir Malevich, who is a Russian artist that founded and focused on the art style of suprematism in around 1915. Suprematism is one of the art movements that focus on basic geometric forms, like circles, squares, lines, and rectangles.
 
 The background of the art pieces in that time were offen white, grey or yellow-ish. We changed the colour mode from RGB to HSB to let us have more control of the colour tone. We programmed the Hue to 60 (yellow) and let the ‘random()’ function generate the value of saturation and brightness to create white, grey and yellow for the background.
